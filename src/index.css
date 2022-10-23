@@ -1,0 +1,96 @@
+body {
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+	user-select: none;
+}
+
+.balls {
+	width: 45%;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+}
+
+.dick {
+	width: 50%;
+	height: 50%;
+	left: 50%;
+	top: 25%;
+	transform-origin: center bottom;
+	touch-action: none
+}
+
+.speedometer {
+	position: absolute;
+	margin: 4%;
+	font-size: 6vmin;
+	font-style: italic;
+	font-weight: bold;
+	color: rgb(243, 177, 190);
+}
+
+.modalBackground {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(255, 223, 229);
+	z-index: 100;
+}
+
+.winModalBackground {
+	background-color: rgba(255, 233, 229, 0.4);
+}
+
+.modal {
+	position: inherit;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	padding: 3vmin;
+	font-size: 3.5vmin;
+	background-color: rgb(255, 255, 255);
+	border: 0.5vmin solid rgb(243, 177, 190);
+	border-radius: 2vmin;
+}
+
+.modal b {
+	font-size: 5vmin;
+}
+
+.modal button {
+	background-color: rgb(255, 255, 255);
+	border: 0.5vmin solid rgb(243, 177, 190);
+	border-radius: 2vmin;
+	font-size: 3.5vmin;
+	padding: 2vmin;
+	transition: 0.1s;
+}
+
+.modal button:hover {
+	background-color: rgb(255, 247, 248);
+	cursor: pointer;
+}
+
+.container {
+	position: absolute;
+	overflow: hidden;
+	height: 90%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	aspect-ratio: 1/1;
+}
+
+.mob {
+	width: 90%;
+	height: unset;
+}
+
+.container img {
+	position: absolute;
+	object-fit: scale-down;
+	display: inline-block;
+	margin: 0;
+	transform: translate(-50%, -50%);
+}
