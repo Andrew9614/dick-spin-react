@@ -13,7 +13,7 @@ class App extends React.Component {
 		this.state = {
 			widthToHeight: window.innerWidth / window.innerHeight,
 			dickCatch: false,
-			startScreenOn:  true,
+			startScreenOn: true,
 			win: false,
 			penis: {
 				phi: 0,
